@@ -4,7 +4,7 @@ pipeline {
         stage(‘git’) {
             steps {
                 echo 'this is the git stage to clone the repository '
-                git branch: 'main', url: 'https://github.com/RickyTricks/javarepo.git'
+                git branch: 'master', url: 'https://github.com/RickyTricks/javarepo.git'
             }
         }
         stage(‘mavenBuild’) {
